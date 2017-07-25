@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Demo Gallery - qGallery</title>
+	<title>Demo Gallery</title>
 </head>
 <body>
 
@@ -23,7 +23,6 @@ window.onload = function() {
     var canv = document.getElementById("showCanvas");
 	var splash = document.getElementById("qsplash");
     var c2d = canv.getContext("2d");
-	//alert('onload OK');
 	c2d.drawImage(splash, 10, 10);
 }
 
@@ -31,7 +30,6 @@ function myImage1() {
     var canv = document.getElementById("showCanvas");
 	var c2d = canv.getContext("2d");
 	var im1 = document.getElementById("image1");
-    //alert('seven');
     c2d.drawImage(im1, 10, 10);
 }
 
@@ -39,7 +37,6 @@ function myImage2() {
     var canv = document.getElementById("showCanvas");
 	var c2d = canv.getContext("2d");
 	var im2 = document.getElementById("image2");
-	//alert('five');
     c2d.drawImage(im2, 10, 10);
 }
 </script>
