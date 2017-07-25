@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Gallery - qGallery</title>
+</head>
+<body>
+
+<p>Images loaded to memory</p>
+<img id="image1" width="220" height="277" src="duck.jpg" alt="Img 1" style="display:none;">
+<img id="image2" width="220" height="277" src="bong.jpg" alt="Img 2" style="display:none;">
+<img id="qsplash" width="220" height="277" src="showsplash.jpg" alt="Img 2" style="display:none;">
+
+<p>Gallery DemoGallery</p>
+<canvas id="showCanvas" width="240" height="297" style="border:1px solid #d3d3d3;">
+Your browser does not support HTML5 canvas. qGallery uses HTML5 canvas to make the magic - make the buttons change the image. Please dig in the code for images.
+</canvas>
+<p>
+<button type="button" onclick="myImage1()">Image1</button>
+<button type="button" onclick="myImage2()">Image2</button>
+
+<script>
+window.onload = function() {
+    var canv = document.getElementById("showCanvas");
+	var splash = document.getElementById("qsplash");
+    var c2d = canv.getContext("2d");
+	//alert('onload OK');
+	c2d.drawImage(splash, 10, 10);
+}
+
+function myImage1() {
+    var canv = document.getElementById("showCanvas");
+	var c2d = canv.getContext("2d");
+	var im1 = document.getElementById("image1");
+    //alert('seven');
+    c2d.drawImage(im1, 10, 10);
+}
+
+function myImage2() {
+    var canv = document.getElementById("showCanvas");
+	var c2d = canv.getContext("2d");
+	var im2 = document.getElementById("image2");
+	//alert('five');
+    c2d.drawImage(im2, 10, 10);
+}
+</script>
+</body>
+</html>
