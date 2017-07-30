@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	
+	<canvas id="myCanvas" width="220" height="340" style="border:1px solid #c3c3c3;">
+		Your browser does not support the canvas element.
+	</canvas>
+	
+	<br>
+	<button onclick="showSettings()">Settings</button>
+	<button onclick="showHome()">Home</button>
+
+	<script>
+			// canvOS v0.1 alpha 2
+		//
+		// phone menus with html canvas
+		// define canvas
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		// draw home screen
+		
+		// background
+		ctx.fillStyle = "#6b3e99";
+		ctx.fillRect(0,0,2200,2200);
+		
+		// clock
+		
+		// digit 1
+		ctx.fillStyle = "#cccccc";
+		ctx.fillRect(6,6,12,46);
+		
+		// digit 2
+		ctx.fillRect(29,6,12,46);
+		ctx.fillRect(29,6,32,12);
+		ctx.fillRect(29,40,32,12);
+		ctx.fillRect(55,6,12,46);
+		
+		// separate
+		ctx.fillRect(79,14,12,12);
+		ctx.fillRect(79,35,12,12);
+		
+		// digit 3
+		ctx.fillRect(99,6,12,46);
+		ctx.fillRect(99,6,32,12);
+		ctx.fillRect(99,40,32,12);
+		ctx.fillRect(125,6,12,46);
+		
+		// digit 4
+		ctx.fillRect(142,6,12,46);
+		ctx.fillRect(142,6,32,12);
+		ctx.fillRect(142,40,32,12);
+		ctx.fillRect(168,6,12,46);
+		
+		// weather
+		
+		// sky
+		ctx.fillStyle = "#00e5ff";
+		ctx.fillRect(0,65,2200,86);
+		
+		// sun
+		ctx.fillStyle = "#fff600";
+		ctx.fillRect(162,67,46,46);
+		
+		// apps
+		
+		// app 1
+		ctx.fillStyle = "#00ff72";
+		ctx.fillRect(6,176,46,46);
+		
+		// app 2
+		ctx.fillStyle = "#00c3ff";
+		ctx.fillRect(65,176,46,46);
+		
+		// app 3
+		ctx.fillStyle = "#f442ee";
+		ctx.fillRect(128,176,46,46);
+		
+		// app drawer
+		ctx.fillStyle = "#adadad";
+		ctx.fillRect(167,286,46,46);
+		
+		function showHome(){
+			// define canvas
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			// draw home screen
+			
+			// background
+			ctx.fillStyle = "#6b3e99";
+			ctx.fillRect(0,0,2200,2200);
+			 
+			// clock
+			
+			// digit 1
+			ctx.fillStyle = "#cccccc";
+			ctx.fillRect(6,6,12,46);
+			
+			// digit 2
+			ctx.fillRect(29,6,12,46);
+			ctx.fillRect(29,6,32,12);
+			ctx.fillRect(29,40,32,12);
+			ctx.fillRect(55,6,12,46);
+			
+			// separate
+			ctx.fillRect(79,14,12,12);
+			ctx.fillRect(79,35,12,12);
+			
+			// digit 3
+			ctx.fillRect(99,6,12,46);
+			ctx.fillRect(99,6,32,12);
+			ctx.fillRect(99,40,32,12);
+			ctx.fillRect(125,6,12,46);
+			
+			// digit 4
+			ctx.fillRect(142,6,12,46);
+			ctx.fillRect(142,6,32,12);
+			ctx.fillRect(142,40,32,12);
+			ctx.fillRect(168,6,12,46);
+			
+			// weather
+			
+			// sky
+			ctx.fillStyle = "#00e5ff";
+			ctx.fillRect(0,65,2200,86);
+			
+			// sun
+			ctx.fillStyle = "#fff600";
+			ctx.fillRect(162,67,46,46);
+			
+			// apps
+			
+			// app 1
+			ctx.fillStyle = "#00ff72";
+			ctx.fillRect(6,176,46,46);
+			
+			// app 2
+			ctx.fillStyle = "#00c3ff";
+			ctx.fillRect(65,176,46,46);
+			
+			// app 3
+			ctx.fillStyle = "#f442ee";
+			ctx.fillRect(128,176,46,46);
+			
+			// app drawer
+			ctx.fillStyle = "#adadad";
+			ctx.fillRect(167,286,46,46);
+		}
+		
+		
+		function showSettings(){
+			// define canvas
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			// draw home screen
+			
+			// background
+			ctx.fillStyle = "#125182";
+			ctx.fillRect(0,0,2200,2200);
+			
+			// menus background
+			ctx.fillStyle = "#efefef";
+			ctx.fillRect(0,42,2200,2200);
+			
+			// text for setting 1
+			ctx.fillStyle = "#848484";
+			ctx.fillRect(10,65,105,16);
+			
+			// text for setting 2
+			ctx.fillRect(10,95,120,16);
+			
+			// text for setting 3
+			ctx.fillRect(10,125,100,16);
+			
+			// checkbox for setting 3
+			ctx.fillStyle = "#c3c3c3";
+			ctx.fillRect(197,125,16,16);
+		}
+	</script>
+
+	</body>
+</html>
