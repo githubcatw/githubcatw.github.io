@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script src="FileSaver.js"></script>
+		<script>
+		function save () {
+			var nickField = document.getElementById("nick");
+			var passField = document.getElementById("pass");
+			console.log("Showing warning...");
+			alert("PLEASE NOTE:\n\nThis page is going to save a .txt document.\nMake sure this page can save files to your computer.\n\nAlso please make sure to save the file in a secure place if the entered credentials are real.\n\nPress OK to close.");
+			console.log("OK, warning closed.");
+			console.log("Saving...");
+			var file = new File(["nick " + nickField.value + " pass " + passField.value], [nickField.value + "-credentials.txt"], {type: "text/plain;charset=utf-8"});
+			saveAs(file);
+			console.log("Done");
+		}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="nick" value="Generic nickname">
+		<input type="text" id="pass" value="Generic password">
+		<br>
+		<button onclick="save()">Save</button>
+	</body>
+</html>
+
