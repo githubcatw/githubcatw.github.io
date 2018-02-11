@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<!-- in action at https://codepen.io/transf1012/pen/QvdVMR -->
+	
+	<head>
+		<title>jQuery - little game</title>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script>
+			$(document).ready(function(){
+    			$("p").hover(function(){
+    			    $(this).css("color", "white");
+        		}, function(){
+        			$(this).css("color", "black");
+    			});
+			});
+		</script>
+	</head>
+	<body>
+		<p>please hover the pointer over me</p>
+	</body>
