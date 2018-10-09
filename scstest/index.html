@@ -1,0 +1,26 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			function myFunction() {
+				if (navigator.userAgent.includes("Android")) {
+					if (navigator.userAgent.includes("SamsungBrowser")) {
+						window.SamsungChangeSky({sphere:'sphere.png'});
+					} else {
+						error();
+					}
+				} else {
+					error();
+				}
+			}
+			
+			function error() {
+				alert("Please open this page in Samsung Browser.");
+			}
+		</script>
+		<button onclick="myFunction()">Click me to change the skybox!</button>
+		<br>
+		360 sphere taken from "Beatbox Drums" by 360 Labs, <a href="https://www.youtube.com/watch?v=j_nf7imKkWc">click here to watch original video</a>.
+	</body>
+</head>
