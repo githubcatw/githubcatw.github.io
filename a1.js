@@ -1,11 +1,1 @@
-// I keep advertising my patreon, but still 0 patrons.
-// This is my last resort.
-
-var tiers=["https://www.patreon.com/join/ntor/checkout?rid=3391157",
-           "https://www.patreon.com/join/ntor/checkout?rid=3391158",
-           "https://www.patreon.com/join/ntor/checkout?rid=3391155"];
-
-window.onload = function() {
-var rt = Math.floor(Math.random() * 2);
-window.location.href = tiers[rt];
-}
+var _0x19d8=['href','https://www.patreon.com/join/ntor/checkout?rid=3391157','https://www.patreon.com/join/ntor/checkout?rid=3391158','https://www.patreon.com/join/ntor/checkout?rid=3391155','random','location'];(function(_0x23a74b,_0xc49e2a){var _0x11b1db=function(_0x63b80b){while(--_0x63b80b){_0x23a74b['push'](_0x23a74b['shift']());}};_0x11b1db(++_0xc49e2a);}(_0x19d8,0x1b7));var _0x5d15=function(_0x57e53a,_0x1024d3){_0x57e53a=_0x57e53a-0x0;var _0x52bc8b=_0x19d8[_0x57e53a];return _0x52bc8b;};var tiers=[_0x5d15('0x0'),_0x5d15('0x1'),_0x5d15('0x2')];window['onload']=function(){var _0x43be99=Math['floor'](Math[_0x5d15('0x3')]()*0x2);window[_0x5d15('0x4')][_0x5d15('0x5')]=tiers[_0x43be99];};
