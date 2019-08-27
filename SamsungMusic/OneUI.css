@@ -1,0 +1,111 @@
+/* ui
+   I said it was ONE ui, right? */
+   
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,200&display=swap');
+   
+body {
+	background-color: #f7f7f7;
+	font-family: 'Roboto', sans-serif;
+	color: #a8a8a8;
+	font-weight: 200;
+	padding: 7px;
+}
+
+h1,h2 {
+	color: #000000;
+	font-weight: 400;
+}
+
+h1.title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 75px;
+	text-align: center;
+}
+h2.title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	text-align: center;
+}
+
+div.oui_container {
+	background-color: #ffffff;
+	border-radius: 25px;
+	padding: 20px;
+	color: #000000;
+}
+
+.centercont {
+	text-align: center;
+}
+
+.center {
+	display: inline-block;
+}
+
+/* This much is only for the tables. */
+table {
+	border-collapse: collapse;
+	color: #000000;
+}
+
+table, th, td {
+	text-align: center;
+	padding: 5px;
+	font-weight: 200;
+}
+
+th, td {
+	border: 1px solid #ebebeb;
+}
+
+th {
+	font-weight: 400;
+}
+
+/* No borders around the table! */
+table tr:first-child td {
+  border-top: 0;
+}
+table tr td:first-child {
+  border-left: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:last-child {
+  border-right: 0;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr th:first-child {
+  border-left: 0;
+}
+table tr:last-child th {
+  border-bottom: 0;
+}
+table tr th:last-child {
+  border-right: 0;
+}
+
+input {
+	border: 1px solid #ebebeb;
+	width: 80%;
+	padding: 5px;
+	border-radius: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+input[type=submit], button {
+	border: 1px solid #00a2ff;
+	background-color: #00a2ff;
+	color: #ffffff;
+}
+
+oui_block_title {
+	padding: 5px;
+	font-weight: 400;
+}

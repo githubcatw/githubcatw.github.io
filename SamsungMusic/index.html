@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<script src="SamsungMusic.json.js"></script>
+		<!-- OneUI-CSS is a mess. That's why I coded my own alternative. -->
+		<link rel="stylesheet" href="OneUI.css">
+		<!-- <link rel="stylesheet" href="DarkMode.css">
+			 Darkaholics and hex patients, please uncomment this to
+			 get dark mode on this page. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<h1 class="title">Samsung Music</h1>
+		<h2 class="title">Music from Samsung commercials</h2>
+		<div class="centercont">
+			<div class="oui_container" id="showData">
+			Unable to generate a table. Please report this to us.
+			</div>
+		</div>
+		<br>
+		<oui_block_title>Report a missing song</oui_block_title><br><br>
+		<div class="oui_container centercont">
+			<div class="center">
+			<form action="reportMissingSong.php" method="post">
+			Ad name: <br><input type="text" name="vidTitle"><br>
+			Song name: <input type="text" name="songTitle"><br>
+			Your name: <input type="text" name="subTitle"><br>
+			Your e-mail: <input type="text" name="subEmail"><br>
+			<i>You will only be sent an email if your request was approved.</i><br><br>
+			<input type="submit">
+			</div>
+			</form>
+		</div>
+		<br><oui_block_title>About</oui_block_title><br><br>
+		<div class="oui_container">
+			This is a site listing Samsung commercial music, inspired by
+			<a href="https://applemusic.info">AppleMusic.info</a>, in OneUI style.
+			<br>
+		</div>
+		<br>
+		<script src="generateTableFromJsArray.js"></script>
+	</body>
+</html>

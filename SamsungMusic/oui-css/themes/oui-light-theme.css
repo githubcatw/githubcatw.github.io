@@ -1,0 +1,35 @@
+:root{
+    /*color palette*/
+    --p-white: #FFFFFF;
+    --white: #FCFCFC;
+    --black: #000000;
+    --d-grey: #737373;
+    --m-grey: #e6e6e6;
+    --l-grey: #d9d9d9;
+    --xl-grey: #F2F2F2;
+    --orange: #F56A0D;
+    --blue: #0074d4;
+    --l-blue: #4297ff;
+    --xl-blue: #A8D3F6;
+
+    /*theme variables*/
+    --primary: var(--blue);
+    --primary-variant: var();
+    --secondary: var();
+    --secondary-variant: var();
+    --active: var(--l-blue);
+    --inactive: var(--xl-blue);
+    --background: var(--xl-grey);
+    --control-background: var(--m-grey);
+    --textual-background: var(--white);
+    --surface: var(--white);
+    --error: var();
+    --accent-badge: var(--orange);
+    --on-primary: var(--p-white);
+    --on-secondary: var();
+    --on-background: var(--d-grey);
+    --on-surface: var(--black);
+    --on-error: var();
+    --on-accent-badge: var(--p-white);
+    --border-surface: var(--m-grey);
+}

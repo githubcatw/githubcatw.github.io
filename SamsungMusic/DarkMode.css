@@ -1,0 +1,19 @@
+/* This is like a plugin for the main OneUI CSS, making the page dark.
+   Still easier than OneUI-CSS's dark mode. */
+   
+body {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+h1,h2,table {
+	color: #ffffff;
+}
+
+div.oui_container {
+	background-color: #292929;
+}
+
+th,td{
+	border: 1px solid #454545;
+}
