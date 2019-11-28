@@ -9,6 +9,11 @@ function newPhone(){
 	roundRect(ctx, 4, 4, 250, 550, 30, true);
 	ctx.fillStyle = '#' + ("000000" + Math.random().toString(16).slice(2, 8).toUpperCase()).slice(-6);
 	
+	/*
+		1 = normal
+		2 = waterfall
+	*/
+	
 	var screen = Math.floor((Math.random() * 2) + 1);
 	console.log("screen:" + screen);
 	if (screen == 1)
