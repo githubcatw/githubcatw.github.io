@@ -1,0 +1,14 @@
+<html>
+<head>
+<script>
+// replace the deeplink for different games
+var dl = "cybtest://login";
+
+var parser = document.createElement('a');
+parser.href = location.href;
+var query = parser.search.substring(1);
+var newURL = dl+"?"+query;
+window.location.replace(newURL);
+</script>
+</head>
+</html>
