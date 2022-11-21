@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro');
+
+h1 {
+	font-family: 'Roboto Slab', serif;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}

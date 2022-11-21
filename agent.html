@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>User Agent</title>
+		<script>
+		function save () {
+			console.log("Showing warning...");
+			alert(navigator.userAgent);
+			console.log("OK, warning closed.");
+		}
+		function peek () {
+			location.href = "https://github.com/githubcatw/githubcatw.github.io/blob/main/agent.html"
+		}
+		</script>
+	</head>
+	<body>
+		<button onclick="save()">View agent</button>
+		<br>
+		<button onclick="peek()">View source code on GitHub</button>
+	</body>
+</html>
